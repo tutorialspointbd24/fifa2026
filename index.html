@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFA World Cup 2026 — Match Schedule | TutorialsPointBD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Pitch texture backdrop -->
+<div class="pitch-bg" aria-hidden="true">
+  <div class="pitch-glow glow-a"></div>
+  <div class="pitch-glow glow-b"></div>
+  <div class="pitch-lines"></div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">⚽</span>
+      <span class="brand-text">TutorialsPoint<span class="brand-accent">BD</span></span>
+    </a>
+    <div class="header-tag">Match Centre · Unofficial Fan Schedule</div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">United 2026 &middot; USA · MEXICO · CANADA</p>
+    <h1 class="hero-title">FIFA WORLD CUP<br><span class="hero-year">2026</span></h1>
+    <p class="hero-sub">Every kickoff. Every stadium. Every flag.<br>The complete tournament schedule, June 11 – July 19.</p>
+
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">104</span><span class="stat-label">Matches</span></div>
+      <div class="stat"><span class="stat-num">48</span><span class="stat-label">Nations</span></div>
+      <div class="stat"><span class="stat-num">16</span><span class="stat-label">Stadiums</span></div>
+      <div class="stat"><span class="stat-num">39</span><span class="stat-label">Match Days</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FLAG TICKER (signature element) ===== -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack"><!-- filled by JS --></div>
+</div>
+
+<!-- ===== FILTER BAR ===== -->
+<section class="filters" id="filters">
+  <div class="filters-inner">
+    <div class="field field-search">
+      <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+      <input type="text" id="searchInput" placeholder="Search team, city or stadium…" autocomplete="off">
+    </div>
+
+    <div class="field">
+      <label for="teamFilter">Country</label>
+      <select id="teamFilter">
+        <option value="">All Countries</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="stageFilter">Stage</label>
+      <select id="stageFilter">
+        <option value="">All Stages</option>
+        <option value="group">Group Stage</option>
+        <option value="r32">Round of 32</option>
+        <option value="r16">Round of 16</option>
+        <option value="qf">Quarter-Finals</option>
+        <option value="sf">Semi-Finals</option>
+        <option value="third">Third Place</option>
+        <option value="final">Final</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="venueFilter">Venue</label>
+      <select id="venueFilter">
+        <option value="">All Venues</option>
+      </select>
+    </div>
+
+    <button class="reset-btn" id="resetBtn" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 2.6-6.4L3 8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 4v4h4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Reset
+    </button>
+  </div>
+  <div class="filters-meta">
+    <span id="resultCount">104 of 104 matches</span>
+    <span class="legend">
+      <span class="legend-dot dot-fox"></span> FOX / FS1 &nbsp;&nbsp;
+      <span class="legend-dot dot-tel"></span> Telemundo / Universo
+    </span>
+  </div>
+</section>
+
+<!-- ===== MATCH GRID ===== -->
+<main class="schedule" id="scheduleGrid">
+  <!-- filled by JS -->
+</main>
+
+<p class="no-results" id="noResults" hidden>No matches found. Try a different filter — or reset to see the full schedule.</p>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-broadcast">
+      <strong> (USA):</strong>  &nbsp;|&nbsp; FS1  &nbsp;|&nbsp;
+      <strong>Telemundo</strong> (Este 406 / Deste 407) &nbsp;|&nbsp; <strong>Universo</strong> — ch. 410
+    </div>
+    <div class="footer-credit">
+      Designed &amp; built with <span class="heart">♥</span> by <strong>TutorialsPoint<span class="brand-accent">BD</span></strong>
+      <span class="footer-dot">•</span> Fan-made schedule for FIFA World Cup 2026™
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
